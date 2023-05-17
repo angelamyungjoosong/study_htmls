@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <div>
+        <form action="../index.html">
+            <div>
+                First name <input type="text" name="firstname" value="Angela">
+            </div>
+            <div>
+                Last name <input type="text" name="lastname" value="Song">
+            </div>
+            <div>
+                Username <input type="text" name="username" placeholder="Username">
+            </div>
+            <div>
+                Email (Optional) <input type="text" name="email" placeholder="you@example.com">
+            </div>
+            <div>
+                Address <input type="text" name="address" placeholder="1234 Main St">
+            </div>
+            <div>
+                Address 2 (Optional) <input type="text" name="address2" placeholder="Apartment or suite">
+            </div>
+            <div>
+                <label for="country">Country </label>
+
+                <select name="country" id="country">
+                    <option value="" selected>Choose...</option>
+                    <option value="southkorea">South Korea</option>
+                    <option value="unitedstates">United States</option>
+                    <option value="france">France</option>
+                </select>
+            </div>
+            <div>
+                <label for="state">State </label>
+
+                <select name="state" id="state">
+                    <option value="" selected>Choose...</option>
+                    <option value="washington">Washington</option>
+                    <option value="california">California</option>
+                    <option value="utah">Utah</option>
+                </select>
+            </div>
+            <div>
+                Zip <input type="text" name="zip" value="54625">
+            </div>
+            <hr>
+            <div>
+                <input type="checkbox" name="shippingaddress" id="shippingaddress">
+                <label for="shippingaddress"> Shipping address is the same as my biling address </label>
+            </div>
+            <div>
+                <input type="checkbox" name="savethisinformation" id="savethisinformation">
+                <label for="savethisinformation"> Save this information for next time </label>
+            </div>
+            <hr>
+            <h3>Payment</h3>
+            <div>
+                <input type="radio" name="payment" checked value="creditcard"> Credit card
+            </div>
+            <div>
+                <input type="radio" name="payment" value="debitcard"> Debit card
+            </div>
+            <div>
+                <input type="radio" name="payment" value="paypal"> Paypal
+            </div>
+            <div>
+                Name on card <input type="text" name="nameoncard" value="Angela Song">
+            </div>
+            <div>
+                Credit card number <input type="text" name="creditcardnumber" value="2456456465465">
+            </div>
+            <div>
+                Expiration <input type="text" name="expiration" value="290515">
+            </div>
+            <div>
+                CVV <input type="text" name="cvv" value="526">
+            </div>
+            <div>
+                <button type="submit">Continue to checkout</button>
+            </div>
+            <hr>
+        </form>
+</body>
+
+</html>
